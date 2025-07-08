@@ -14,7 +14,7 @@ export default defineConfig([
   // ====== 配置ESLint忽略指定目录的文件 ======
   js.configs.recommended,
   // ====== 启用TypeScript推荐规则集 =======
-  ...tseslint.configs.recommended,
+  tseslint.configs.recommended,
   // ====== 为所有JS/TS文件启用浏览器全局变量 =====
   {
     files: ["**/*.{js,mjs,cjs,ts,mts,cts,jsx,tsx}"],
