@@ -1,7 +1,6 @@
 import React from "react";
 import { IconAlertCircle } from "@tabler/icons-react";
 import { cn } from "@/lib/utils";
-
 type Props = {
   className?: string;
   text: string;
