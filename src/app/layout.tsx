@@ -1,4 +1,5 @@
 import "./globals.css";
+import Layout from "@/components/layout";
 
 export default function RootLayout({
   children
@@ -7,7 +8,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>{children}</body>
+      <body className={`antialiased`}>
+        <Layout>{children}</Layout>
+      </body>
     </html>
   );
 }

@@ -1,7 +1,17 @@
+"use client";
+import { useRouter } from "next/navigation";
+
 export default function Home() {
+  const router = useRouter();
+
   return (
-    <div className="grid min-h-screen grid-rows-[20px_1fr_20px] items-center justify-items-center gap-16 p-8 pb-20 font-[family-name:var(--font-geist-sans)] sm:p-20">
+    <>
       <h1>Hello World</h1>
-    </div>
+      <button
+        onClick={() => router.push("/about?test=test")}
+        className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600">
+        Go to About
+      </button>
+    </>
   );
 }
