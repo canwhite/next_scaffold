@@ -1,5 +1,6 @@
 "use client";
 import { useRouter } from "next/navigation";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   const router = useRouter();
@@ -7,11 +8,14 @@ export default function Home() {
   return (
     <>
       <h1>Hello World</h1>
-      <button
-        onClick={() => router.push("/about?test=test")}
-        className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-600">
-        Go to About
-      </button>
+
+      <Button
+        size="sm"
+        className="mt-4 w-[200px] bg-blue-200"
+        variant="outline"
+        onClick={() => router.push("/about?test=test")}>
+        about
+      </Button>
     </>
   );
 }
